@@ -1,0 +1,23 @@
+|Lab1_week4
+clk => n[0].CLK
+clk => n[1].CLK
+clk => n[2].CLK
+clk => n[3].CLK
+clk => ir_old.CLK
+key1 => ~NO_FANOUT~
+ir_rx => ir_old.DATAIN
+ir_rx => always0.IN1
+seg[0] << seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] << seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+seg[7] << <VCC>
+dig[0] << <GND>
+dig[1] << <VCC>
+dig[2] << <VCC>
+dig[3] << <VCC>
+
+
